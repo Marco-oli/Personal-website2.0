@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle `
    }
 
    body {
-      font-family: 'Lato', sans-serif;
+      font-family: 'Raleway', sans-serif;
       font-weight: 400;
       line-height: 1.75;
       letter-spacing: 1px;
