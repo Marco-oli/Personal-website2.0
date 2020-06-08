@@ -1,9 +1,7 @@
 import React from 'react';
 import * as S from './styles';
-import { BsCodeSlash } from 'react-icons/bs';
+import { FiArrowDown } from 'react-icons/fi';
 
-import images from '../../assets/images';
-import colors from '../../assets/colors';
 
 const Home = () => {
    return (
@@ -12,25 +10,15 @@ const Home = () => {
             <S.Content>
 
                <S.Header>
-                  <S.BoxLogo>
-                     <BsCodeSlash color={colors.text} size={25}/>
-                     <h3>Developer</h3>
-                  </S.BoxLogo>
-
-                  <S.BoxLinks>
-                     <a href="">Sobre</a>
-                     <a href="">Tecnologias</a>
-                     <a href="">Potfólio</a>
-                  </S.BoxLinks>
+                  <S.BoxTitle>
+                     <p>Olá, me chamo <span>Marco Aurélio</span>.</p>
+                     <p>Sou Desenvolvedor Front-End Júnior.</p>
+                  </S.BoxTitle>
+                  
+                  <S.BoxButton href="">
+                     Ver meu trabalho <FiArrowDown  size={18} />
+                  </S.BoxButton>
                </S.Header>
-
-               <S.Main>
-                  <S.BoxImage>
-                     <img src={images.Profile} alt="profile"/>
-                  </S.BoxImage>
-                  <h1>Marco Aurélio</h1>
-                  <p>Front-End Developer</p>
-               </S.Main>
 
             </S.Content>
          </S.Container>

@@ -14,75 +14,59 @@ export const Content = styled.div`
    width: 100%;
    max-width: 1300px;
    padding: 20px;
-   box-sizing: border-box;
 `;
 
 export const Header = styled.header`
    display: flex;
+   flex-direction: column;
    flex: 1;
-   justify-content: space-around;
-   align-items: center;
+   justify-content: center;
+   align-items:center;
+   min-height: 95vh;
 `;
 
-export const BoxLogo = styled.div`
-   display: flex;
-   align-items: center;
-   flex: 0.5;
-   font-size: 20px;
-
-   h3 {
-      padding-left: 10px;
-   }
-`;
-
-export const BoxLinks = styled.nav`
-   display: flex;
-   justify-content: space-evenly;
-   flex: 0.5;
-
-   a {
-      text-decoration: none;
-      font-size: 24px;
-      transition: all 0.5s;
-      font-family: 'Lato', sans-serif;
-
-      :hover {
-         color: ${colors.textHover};
-      }
-   }
-`;
-
-export const Main = styled.main`
+export const BoxTitle = styled.div`
    display: flex;
    flex-direction: column;
-   height: 100%;
-   align-items: center;
-   justify-content: center;
-   letter-spacing: 10px;
-
-   h1 {
-      font-size: 45px;
-
-      ::after {
-         content: '';
-         width: 250px;
-         height: 2px;
-         background-color: currentColor;
-         display: block;
-         margin: 20px auto;
-         border-radius: 2px;
-      }
-   }
+   line-height: 52px;
+   padding-bottom: 25px;
+   letter-spacing: 0px;
+   font-weight: 300;
 
    p {
-      font-size: 20px;
+      font-size: 44px;
+      
+   }
+
+   span {
+      font-size: 46px;
+      font-weight: 500;
+      color: ${colors.blueStrong};
    }
 `;
 
-export const BoxImage = styled.div`
-   img {
-      width: 220px;
-      border: 5px solid #BEBEBE;
-      border-radius: 50%;
+export const BoxButton = styled.a`
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   box-sizing: inherit;   
+   font-size: 18px;
+   color: ${colors.text};
+   padding: 0;
+   line-height: 40px;
+   font-family: 'Raleway', sans-serif;
+   font-weight: 300;
+   letter-spacing: 0px;
+   border: 2px solid #fff;
+   border-radius: 5px;
+   padding: 0 10px;
+   transition: all 0.5s;
+
+   :hover {
+      background-color: ${colors.red};
+      border: 2px solid ${colors.red};
+      color: ${colors.textHover};
    }
+   
 `;
+
