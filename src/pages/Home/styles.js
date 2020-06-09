@@ -35,8 +35,9 @@ export const BoxTitle = styled.div`
    font-weight: 300;
 
    p {
-      font-size: 44px;
-      
+      display: flex;
+      justify-content: center;
+      font-size: 44px; 
    }
 
    span {
@@ -44,6 +45,7 @@ export const BoxTitle = styled.div`
       font-weight: 500;
       color: ${colors.blueStrong};
    }
+
 `;
 
 export const BoxButton = styled.a`

@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle `
       letter-spacing: 1px;
       color: #fff;
       text-align: center; 
-      color: ${colors.text}; 
+      color: ${colors.text};
    }
 
 `;

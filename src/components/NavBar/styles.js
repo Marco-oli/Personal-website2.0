@@ -15,8 +15,7 @@ export const Container = styled.div`
 export const BoxNavBar = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 25%;
+  width: 90%;
   margin: 0 300px;
 
   li {
@@ -24,6 +23,7 @@ export const BoxNavBar = styled.div`
   }
 
   a {
+     margin-right: 45px;
      text-decoration: none;
      font-size: 18px;
      text-transform: uppercase;
