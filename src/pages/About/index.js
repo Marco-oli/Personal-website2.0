@@ -1,13 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import CardTecnology from '../../components/CardTecnology';
 import IconAbout from '../../components/IconAbout';
 
-import { IoMdMusicalNotes } from 'react-icons/io';
-
 import api from '../../services/api';
 import images from '../../assets/images';
-import colors from '../../assets/colors';
 
 import * as S from './styles';
 
@@ -27,6 +24,8 @@ const About = () => {
          setTecnology(response.data.tecnology)
       })
    }, [])
+
+   
 
    return (
       <S.Container>
@@ -48,14 +47,13 @@ const About = () => {
 
          </S.SoftSkills>
 
-         <S.Profile>
+         <S.Profile id="About">
             <S.BoxProfile>
                <S.BoxProfileImage>
                   <img src={images.Profile} alt=""/>
                </S.BoxProfileImage>
                <S.BoxProfileTitle>
-                  <h2>Esse cara sou eu</h2>
-                  <IoMdMusicalNotes size={25} color={colors.red}/>
+                  <h2>Quem sou?</h2>
                </S.BoxProfileTitle>
                <S.BoxProfileDescription>
                   <p>Sou desenvolvedor front-end do <span>Rio de Janeiro</span> - RJ, Brasil.
@@ -66,13 +64,7 @@ const About = () => {
 
             <S.Tecnology>
             {(tecnology) ? tecnology.map(item => (
-              
-                  <S.BoxTecnology key={item.id}>
-                     <CardTecnology icon={item.icon} />
-                     <p>{item.title}</p>
-                  </S.BoxTecnology>
-               
-               
+               <CardTecnology key={item.id} icon={item.icon} title={item.title}/>
             )) : null}
 
             </S.Tecnology>

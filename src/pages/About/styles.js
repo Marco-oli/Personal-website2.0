@@ -9,10 +9,11 @@ export const Container = styled.div`
    min-height: 100vh;
    color: ${colors.textAbout};
    background-color: #EFF9FB;
+   position: relative;
    
    h1 {
       color: ${colors.titleAbout};
-      margin-top: 50px;
+      margin-top: 70px;
       font-size: 40px;
       letter-spacing: 0px;
       text-transform: uppercase;
@@ -33,7 +34,7 @@ export const SoftSkills = styled.header`
    display: flex;
    justify-content: space-evenly;
    max-width: 80%;
-   margin-top: 80px;
+   margin-top: 50px;
 `;
 
 export const Skills = styled.div`
@@ -77,6 +78,7 @@ export const BoxProfile =styled.main`
    display: flex;
    flex-direction: column;
    align-items: center;
+   justify-content: space-evenly;
    flex: 0.7;
 `;
 
@@ -98,6 +100,14 @@ export const BoxProfileTitle = styled.div`
       font-size: 28px;
       letter-spacing: 0px;
       margin-right: 5px;
+      
+      ::after {
+         content: '';
+         display: block;
+         width: 100%;
+         height: 1px;
+         background-color: #ccc;
+      }
   }
 `;
 
@@ -122,24 +132,6 @@ export const Tecnology = styled.div`
    width: 50%;
 `;
 
-export const BoxTecnology = styled.div`
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: space-evenly;
-   max-height: 110px;
-   max-width: 110px;
-   padding: 5px;
-   background-color: #fff;
-   border-radius: 50%;
-   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
-
-   p {
-      font-size: 18px;
-      font-weight: bold;
-   }
-
-`;
 
 
 

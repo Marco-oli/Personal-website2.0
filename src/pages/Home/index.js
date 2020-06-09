@@ -1,12 +1,15 @@
 import React from 'react';
+
 import * as S from './styles';
 import { FiArrowDown } from 'react-icons/fi';
 
+import NavBar from '../../components/NavBar';
 
 const Home = () => {
+
    return (
       <>
-         <S.Container >
+         <S.Container id="Home">
             <S.Content>
 
                <S.Header>
@@ -15,13 +18,14 @@ const Home = () => {
                      <p>Sou Desenvolvedor Front-End Júnior.</p>
                   </S.BoxTitle>
                   
-                  <S.BoxButton href="">
+                  <S.BoxButton href="#About">
                      Ver meu trabalho <FiArrowDown  size={18} />
                   </S.BoxButton>
                </S.Header>
-
             </S.Content>
          </S.Container>
+
+         <NavBar />
       </>
    )
 }

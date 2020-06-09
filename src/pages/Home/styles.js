@@ -8,6 +8,7 @@ export const Container = styled.div`
    min-height: 100vh;
    display: flex;
    justify-content: center;
+   position: relative;
 `;
 
 export const Content = styled.div`
