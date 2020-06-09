@@ -1,6 +1,7 @@
 import React from 'react';
 import colors from '../../assets/colors';
 import images from '../../assets/images';
+import * as S from './styles';
 
 import { 
    IoLogoHtml5,
@@ -11,24 +12,26 @@ import {
 import { MdDevices } from 'react-icons/md';
 import { FaYarn, FaReact } from 'react-icons/fa';
 
-const CardTecnology = ({icon}) => {
+
+
+const CardTecnology = ({icon, title}) => {
       switch(icon) {
          case 'IoLogoHtml5':
-            return  <IoLogoHtml5 size={35} color={colors.html} />;
+                  return <S.BoxTecnology pColor={colors.html} boxColor={colors.html}><IoLogoHtml5 size={35} color={colors.html} /><p>{title}</p></S.BoxTecnology>
          case 'IoLogoCss3':
-            return  <IoLogoCss3 size={35} color={colors.css}/>;
+                  return <S.BoxTecnology pColor={colors.css} boxColor={colors.css}><IoLogoCss3 size={35} color={colors.css}/><p>{title}</p></S.BoxTecnology>;  
          case 'IoLogoJavascript': 
-            return <IoLogoJavascript size={35} color={colors.javascript}/>;
+                  return <S.BoxTecnology pColor={colors.javascript} boxColor={colors.javascript}><IoLogoJavascript size={35} color={colors.javascript}/><p>{title}</p></S.BoxTecnology>       
          case 'IoLogoGithub': 
-            return <IoLogoGithub size={35} color={colors.git}/>;
+                  return <S.BoxTecnology pColor={colors.git} boxColor={colors.git}><IoLogoGithub size={35} color={colors.git}/><p>{title}</p></S.BoxTecnology>       
          case 'FaYarn': 
-            return <FaYarn size={35} color={colors.yarn}/>;
+                  return <S.BoxTecnology pColor={colors.yarn} boxColor={colors.yarn}><FaYarn size={35} color={colors.yarn}/><p>{title}</p></S.BoxTecnology>  
          case 'FaReact': 
-            return <FaReact size={35} color={colors.react}/>;
+                  return <S.BoxTecnology pColor={colors.react} boxColor={colors.react}><FaReact size={35} color={colors.react}/><p>{title}</p></S.BoxTecnology>  
          case 'MdDevices': 
-            return <MdDevices size={35} color={colors.titleAbout}/>;
+                  return <S.BoxTecnology pColor={colors.textAbout} pColor={colors.textAbout}><MdDevices size={35} color={colors.titleAbout}/><p>{title}</p></S.BoxTecnology>
          case 'expo': 
-            return <img src={images.Expo} />;
+                  return <S.BoxTecnology pColor={colors.expo} boxColor={colors.expo}><img src={images.Expo} /><p>{title}</p></S.BoxTecnology>    
          default:
             return null;
       }          
