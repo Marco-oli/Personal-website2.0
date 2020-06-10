@@ -10,7 +10,7 @@ export const Container = styled.div`
    left: 0;
    min-height: 50px;
    background-color: ${colors.navbar};
-   border-bottom: 3px solid ${colors.red};
+   border-bottom: 2px solid ${colors.red};
 `;
 
 export const BoxNavBar = styled.div`
