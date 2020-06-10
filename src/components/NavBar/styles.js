@@ -30,6 +30,10 @@ export const BoxNavBar = styled.div`
      color: #fff;
      transition: all 0.6s;
 
+     :focus {
+         color: ${colors.blueStrong};
+     }
+
      :hover {
         color: ${colors.blueStrong};
      }

@@ -1,12 +1,14 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 
-import CardTecnology from '../../components/CardTecnology';
+// Images, Styles, Icons...
+import images from '../../assets/images';
+import * as S from './styles';
 import IconAbout from '../../components/IconAbout';
 
+// Components and Apis
 import api from '../../services/api';
-import images from '../../assets/images';
+import CardTecnology from '../../components/CardTecnology';
 
-import * as S from './styles';
 
 const About = () => {
 
@@ -24,11 +26,10 @@ const About = () => {
          setTecnology(response.data.tecnology)
       })
    }, [])
-
    
-
+   
    return (
-      <S.Container>
+      <S.Container id="About">
          <div>
             <h1>Sobre</h1>
          </div>
@@ -47,7 +48,7 @@ const About = () => {
 
          </S.SoftSkills>
 
-         <S.Profile id="About">
+         <S.Profile >
             <S.BoxProfile>
                <S.BoxProfileImage>
                   <img src={images.Profile} alt=""/>

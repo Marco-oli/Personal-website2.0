@@ -10,6 +10,7 @@ export const Container = styled.div`
    color: ${colors.textAbout};
    background-color: #EFF9FB;
    position: relative;
+   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
    
    h1 {
       color: ${colors.titleAbout};
@@ -71,7 +72,7 @@ export const Profile =styled.main`
    max-width: 70%;
    flex: 1;
    margin-top: 70px;
-   margin-bottom: 30px;
+   margin-bottom: 50px;
 `;
 
 export const BoxProfile =styled.main`

@@ -15,4 +15,5 @@ export default {
    git: '#E94E32',
    react: '#5ED4F4',
    navbar: '#1b242f',
+   projects: '#f5f5f5',
 }
