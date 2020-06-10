@@ -25,7 +25,7 @@ const Home = () => {
                      <p>Olá, me chamo
                         <span className={showName}> Marco Aurélio</span>.
                      </p>
-                     <p>Sou Desenvolvedor Front-End Júnior.</p>
+                     <p>Sou Desenvolvedor Front-End.</p>
                   </S.BoxTitle>
                   
                   <S.BoxButton href="#About">
