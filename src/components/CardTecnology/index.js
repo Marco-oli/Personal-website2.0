@@ -29,9 +29,9 @@ const CardTecnology = ({icon, title}) => {
          case 'FaReact': 
                   return <S.BoxTecnology pColor={colors.react} boxColor={colors.react}><FaReact size={35} color={colors.react}/><p>{title}</p></S.BoxTecnology>  
          case 'MdDevices': 
-                  return <S.BoxTecnology pColor={colors.textAbout} pColor={colors.textAbout}><MdDevices size={35} color={colors.titleAbout}/><p>{title}</p></S.BoxTecnology>
+                  return <S.BoxTecnology pColor={colors.textAbout}><MdDevices size={35} color={colors.titleAbout}/><p>{title}</p></S.BoxTecnology>
          case 'expo': 
-                  return <S.BoxTecnology pColor={colors.expo} boxColor={colors.expo}><img src={images.Expo} /><p>{title}</p></S.BoxTecnology>    
+                  return <S.BoxTecnology pColor={colors.expo} boxColor={colors.expo}><img src={images.Expo} alt="expo image" /><p>{title}</p></S.BoxTecnology>    
          default:
             return null;
       }          

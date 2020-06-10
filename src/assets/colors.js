@@ -16,4 +16,5 @@ export default {
    react: '#5ED4F4',
    navbar: '#1b242f',
    projects: '#f5f5f5',
+   projectsTitle: '#1b242f',
 }

@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import colors from '../../assets/colors';
-import images from '../../assets/images';
 
 export const Container = styled.div`
    display: flex;
@@ -36,64 +35,67 @@ export const BoxProjects = styled.div`
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    grid-template-rows: 1fr 1fr;
-   width: 60%;
+   gap: 20px;
+   width: 65%;
    height: 720px;
    max-height: 720px;
    box-sizing: border-box;
    margin-top: 50px;
 `;
 
-export const Projects1 = styled.div`
-   max-width: 390px;
+export const Projects = styled.div`
+   max-width: 450px;
    width: 100%;
    max-height: 360px;
-   background-image: url(${images.Eco});
+   background-image: url(${props => props.BackGround});
    background-size: cover;
-
-
+   position: relative;
+   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 `;
-export const Projects2 = styled.div`
-   max-width: 390px;
+
+export const ProjectsDescription = styled.div`
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   max-width: 450px;
    width: 100%;
-   max-height: 360px;
-   background-image: url(${images.Pessoal});
-   background-size: cover;
+   height: 360px;
+   background-color: #fff;
 
+   h3 {
+      font-size: 28px;
+      color: ${colors.projectsTitle};
+      font-weight: bold;
+      line-height: 30px;
+   }
 
+   p {
+      font-size: 16px;
+      color: ${colors.red};
+      font-weight: 300;
+      text-transform: capitalize
+   }
+
+   div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 0.5;
+
+      a {
+         text-decoration: none;
+         border: 2px solid ${colors.red};
+         border-radius: 5px;
+         padding: 5px 15px;
+         color: ${colors.projectsTitle};
+
+         :hover {
+            background-color: ${colors.red};
+            color: #fff;
+         }
+      }
+   }
 `;
-export const Projects3 = styled.div`
-   max-width: 390px;
-   width: 100%;
-   max-height: 360px;
-   background-image: url(${images.Dt3});
-   background-size: cover;
 
 
-`;
-export const Projects4 = styled.div`
-   max-width: 390px;
-   width: 100%;
-   max-height: 360px;
-   background-image: url(${images.Qconc});
-   background-size: cover;
-
-
-`;
-export const Projects5 = styled.div`
-   max-width: 390px;
-   width: 100%;
-   max-height: 360px;
-   background-image: url(${images.Pizza});
-   background-size: cover;
-
-
-`;
-export const Projects6 = styled.div`
-   max-width: 390px;
-   width: 100%;
-   max-height: 360px;
-   background-image: url(${images.Soccer});
-   background-size: cover;
-
-
-`;
