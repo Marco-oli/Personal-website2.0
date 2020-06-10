@@ -5,8 +5,9 @@ export const Container = styled.div`
    display: flex;
    align-items: center;
    width: 100%;
-   position: absolute;
-   z-index: 9;
+   position: fixed;
+   top: 0;
+   left: 0;
    min-height: 50px;
    background-color: ${colors.navbar};
    border-bottom: 3px solid ${colors.red};
@@ -25,7 +26,7 @@ export const BoxNavBar = styled.div`
   a {
      margin-right: 45px;
      text-decoration: none;
-     font-size: 18px;
+     font-size: 16px;
      text-transform: uppercase;
      color: #fff;
      transition: all 0.6s;

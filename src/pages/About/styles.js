@@ -9,7 +9,6 @@ export const Container = styled.div`
    min-height: 100vh;
    color: ${colors.textAbout};
    background-color: #EFF9FB;
-   position: relative;
    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
    
    h1 {

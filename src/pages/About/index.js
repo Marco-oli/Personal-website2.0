@@ -9,7 +9,6 @@ import IconAbout from '../../components/IconAbout';
 import api from '../../services/api';
 import CardTecnology from '../../components/CardTecnology';
 
-
 const About = () => {
 
    const [dados, setDados] = useState([]);
@@ -29,49 +28,56 @@ const About = () => {
    
    
    return (
-      <S.Container id="About">
-         <div>
-            <h1>Sobre</h1>
-         </div>
-         
-         <S.SoftSkills>
+      <>
+         <S.Container id="About">
 
-            {(dados) ? dados.map(item => (
-               <S.Skills key={item.id}>
-                  <div>
-                     <IconAbout icon={item.icon}/>
-                  </div>
-                  <h4>{item.title}</h4>
-                  <p>{item.subtitle}</p>
-               </S.Skills>
-            )) : console.log('error')}
-
-         </S.SoftSkills>
-
-         <S.Profile >
-            <S.BoxProfile>
-               <S.BoxProfileImage>
-                  <img src={images.Profile} alt=""/>
-               </S.BoxProfileImage>
-               <S.BoxProfileTitle>
-                  <h2>Quem sou?</h2>
-               </S.BoxProfileTitle>
-               <S.BoxProfileDescription>
-                  <p>Sou desenvolvedor front-end do <span>Rio de Janeiro</span> - RJ, Brasil.
-                     Criei uma grande paixão por interfaces web e mobile, animações e <span>criação de experiências intuitivas</span> e dinâmicas para o usuário.
-                     Vamos criar algo juntos!</p>
-               </S.BoxProfileDescription>
-            </S.BoxProfile>
-
-            <S.Tecnology>
-            {(tecnology) ? tecnology.map(item => (
-               <CardTecnology key={item.id} icon={item.icon} title={item.title}/>
-            )) : null}
-
-            </S.Tecnology>
+            <div>
+               <h1>Sobre</h1>
+            </div>
             
-         </S.Profile>
-      </S.Container>
+            <S.SoftSkills>
+
+               {(dados) ? dados.map(item => (
+                  <S.Skills key={item.id}>
+                     <div>
+                        <IconAbout icon={item.icon}/>
+                     </div>
+                     <h4>{item.title}</h4>
+                     <p>{item.subtitle}</p>
+                  </S.Skills>
+               )) : console.log('error')}
+
+            </S.SoftSkills>
+
+            <S.Profile >
+               <S.BoxProfile>
+                  <S.BoxProfileImage>
+                     <img src={images.Profile} alt=""/>
+                  </S.BoxProfileImage>
+                  <S.BoxProfileTitle>
+                     <h2>Quem sou?</h2>
+                  </S.BoxProfileTitle>
+                  <S.BoxProfileDescription>
+                     <p>Sou desenvolvedor front-end do <span>Rio de Janeiro</span> - RJ, Brasil.
+                        Criei uma grande paixão por interfaces web e mobile, animações e <span>criação de experiências intuitivas</span> e dinâmicas para o usuário.
+                        Vamos criar algo juntos!</p>
+                  </S.BoxProfileDescription>
+               </S.BoxProfile>
+
+               <S.Tecnology>
+               {(tecnology) ? tecnology.map(item => (
+                  <CardTecnology key={item.id} icon={item.icon} title={item.title}/>
+               )) : null}
+
+               </S.Tecnology>
+               
+            </S.Profile>
+
+           
+         </S.Container>
+
+         
+      </>
    )
 }
 

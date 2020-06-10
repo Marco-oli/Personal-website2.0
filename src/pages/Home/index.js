@@ -6,7 +6,7 @@ import '../Home/animations.css';
 import { FiArrowDown } from 'react-icons/fi';
 
 //  Components
-import NavBar from '../../components/NavBar';
+
 
 const Home = () => {
 
@@ -35,7 +35,6 @@ const Home = () => {
             </S.Content>
          </S.Container>
 
-         <NavBar />
       </>
    )
 }

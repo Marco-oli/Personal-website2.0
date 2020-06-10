@@ -9,7 +9,6 @@ export const Container = styled.div`
    min-height: 100vh;
    color: ${colors.textAbout};
    background-color: ${colors.projects};
-   position: relative;
    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
    
    h1 {
@@ -49,7 +48,6 @@ export const Projects = styled.div`
    max-height: 360px;
    background-image: url(${props => props.BackGround});
    background-size: cover;
-   position: relative;
    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 `;
 

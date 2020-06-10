@@ -17,4 +17,6 @@ export default {
    navbar: '#1b242f',
    projects: '#f5f5f5',
    projectsTitle: '#1b242f',
+   contact: '#252934',
+   message: '#1e242c'
 }
