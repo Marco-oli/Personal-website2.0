@@ -5,13 +5,13 @@ import { MdDevices, MdHighQuality } from 'react-icons/md';
 const IconAbout = ({icon}) => {
    switch(icon) {
       case 'IoMdSpeedometer':
-         return  <IoMdSpeedometer fontSize={50} color="#fff"/>;
+         return  <IoMdSpeedometer fontSize={40} color="#fff"/>;
       case 'MdHighQuality':
-         return <MdHighQuality fontSize={50} color="#fff"/>;
+         return <MdHighQuality fontSize={40} color="#fff"/>;
          case 'MdDevices':
-            return <MdDevices fontSize={50} color="#fff"/>;
+            return <MdDevices fontSize={40} color="#fff"/>;
          case 'IoIosRocket':
-            return <IoIosRocket fontSize={50} color="#fff"/>;
+            return <IoIosRocket fontSize={40} color="#fff"/>;
          default:
             return null;
    }

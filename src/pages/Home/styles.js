@@ -36,13 +36,44 @@ export const BoxTitle = styled.div`
    p {
       display: flex;
       justify-content: center;
-      font-size: 44px; 
+      font-size: 40px; 
    }
 
    span {
-      font-size: 46px;
+      font-size: 42px;
       font-weight: 500;
       color: ${colors.blueStrong};
+   }
+
+   /* -------- Media ---------*/
+
+   @media (max-width: 600px) {
+      p {
+         font-size: 30px;
+      }
+
+      span {
+         font-size: 32px;
+      }
+
+   @media (max-width: 415px) {
+      p {
+         font-size: 20px;
+      }
+
+      span {
+         font-size: 24px;
+      }
+   }
+
+   @media (max-width: 320px) {
+      p {
+         font-size: 14px;
+      }
+
+      span {
+         font-size: 18px;
+      }
    }
 
 `;
@@ -68,6 +99,22 @@ export const BoxButton = styled.a`
       background-color: ${colors.red};
       border: 2px solid ${colors.red};
       color: ${colors.textHover};
+   }
+
+   /* -------- Media ---------*/
+
+   @media (max-width: 600px) {
+      font-size: 16px;
+   }
+
+   @media (max-width: 415px) {
+      font-size: 14px;
+      line-height: 30px;
+   }
+
+   @media (max-width: 320px) {
+      font-size: 12px;
+      line-height: 24px;
    }
    
 `;

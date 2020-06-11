@@ -65,7 +65,7 @@ const About = () => {
                </S.BoxProfile>
 
                <S.Tecnology>
-               {(tecnology) ? tecnology.map(item => (
+               {(tecnology) ? tecnology.map(item => (   
                   <CardTecnology key={item.id} icon={item.icon} title={item.title}/>
                )) : null}
 

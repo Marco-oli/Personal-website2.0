@@ -13,7 +13,7 @@ export const Container = styled.div`
    
    h1 {
       color: ${colors.titleAbout};
-      margin-top: 70px;
+      margin-top: 40px;
       font-size: 40px;
       letter-spacing: 0px;
       text-transform: uppercase;
@@ -28,6 +28,14 @@ export const Container = styled.div`
          
       }
    }
+
+   /* -------- Media ---------*/
+
+   @media (max-width: 415px) {
+      h1 {
+         font-size: 32px;
+      }
+   }
 `;
 
 export const SoftSkills = styled.header`
@@ -35,12 +43,21 @@ export const SoftSkills = styled.header`
    justify-content: space-evenly;
    max-width: 80%;
    margin-top: 50px;
+
+    /* -------- Media ---------*/
+
+    @media (max-width: 980px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+   }
 `;
 
 export const Skills = styled.div`
    display: flex;
    align-items: center;
-   flex: 0.20;
+   flex: 0.25;
    flex-direction: column;
 
    div {
@@ -49,8 +66,8 @@ export const Skills = styled.div`
       align-items: center;
       background-color: ${colors.blueStrong};
       border-radius: 30px;
-      width: 100px;
-      height: 100px;
+      width: 85px;
+      height: 85px;
       
    }
 
@@ -61,6 +78,29 @@ export const Skills = styled.div`
 
    p {
       line-height: 20px;
+      padding: 0 10px 5px;
+   }
+
+   /* -------- Media ---------*/
+
+   @media (max-width: 980px) {
+      flex: 0.5;
+   }
+
+   @media (max-width: 600px) {
+     div {
+         width: 75px;
+         height: 75px;
+         border-radius: 25px;
+     }
+
+     h4 {
+        font-size: 22px;
+     }
+
+     p {
+        line-height: 16px;
+     }
    }
 `;
 
@@ -70,16 +110,30 @@ export const Profile =styled.main`
    justify-content: space-around;
    max-width: 70%;
    flex: 1;
-   margin-top: 70px;
+   margin-top: 50px;
    margin-bottom: 50px;
+
+   /* -------- Media ---------*/
+
+   @media (max-width: 980px) {
+      flex-direction: column;
+      align-items: center;
+      
+   }
 `;
 
 export const BoxProfile =styled.main`
    display: flex;
    flex-direction: column;
+   justify-content: center;
    align-items: center;
-   justify-content: space-evenly;
-   flex: 0.7;
+   width: 50%;
+
+   /* -------- Media ---------*/
+
+   @media (max-width: 980px) {
+      width: 100%;
+   }   
 `;
 
 export const BoxProfileImage = styled.div`
@@ -92,14 +146,10 @@ export const BoxProfileImage = styled.div`
 `;
 
 export const BoxProfileTitle = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
   h2 {
       font-size: 28px;
       letter-spacing: 0px;
-      margin-right: 5px;
+      margin-bottom: 20px;
       
       ::after {
          content: '';
@@ -114,6 +164,7 @@ export const BoxProfileTitle = styled.div`
 export const BoxProfileDescription = styled.div`
    display: flex;
    justify-content: center;
+   
 
    p {
      max-width: 80%;
@@ -123,13 +174,29 @@ export const BoxProfileDescription = styled.div`
       color: ${colors.blueStrong};
       font-weight: 500;
    }
+
+   /* -------- Media ---------*/
+
+   @media (max-width: 980px) {
+      p {
+         margin-top: 10px;
+         margin-bottom: 20px;
+      }
+   }
 `;
 
 export const Tecnology = styled.div`
    display: grid;
    grid-template-columns: 1fr 1fr;
-   gap: 20px;
-   width: 50%;
+   width: 30%;
+   align-items: stretch;
+
+   /* -------- Media ---------*/
+
+   @media (max-width: 980px) {
+      width: 100%;
+      justify-items: center;
+   }
 `;
 
 
