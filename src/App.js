@@ -13,7 +13,7 @@ const App = () => {
       <NavBar />
       <About />
       <Projects />
-      <Contact />
+      <Contact  />
     </div>
   );
 }
