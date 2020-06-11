@@ -8,7 +8,7 @@ import Contact from './pages/Contact';
 
 const App = () => {
   return (
-    <div style={{position: "relative"}}> 
+    <div style={{position: "relative", overflow: 'hidden'}}> 
       <Home />
       <NavBar />
       <About />

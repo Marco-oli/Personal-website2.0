@@ -28,6 +28,14 @@ export const Container = styled.div`
          
       }
    }
+
+    /* -------- Media ---------*/
+
+    @media (max-width: 415px) {
+      h1 {
+         font-size: 32px;
+      }
+   }
 `;
 
 export const BoxForm = styled.div`
@@ -41,6 +49,17 @@ export const BoxForm = styled.div`
       font-weight: 400;
       color: ${colors.red};
       margin-bottom: 50px;
+   }
+
+   /* Media Queries */
+
+   @media (max-width: 600px) {
+      width: 90%;
+      height: 550px;
+
+      p {
+         margin-top: 30px;
+      }
    }
 `;
 

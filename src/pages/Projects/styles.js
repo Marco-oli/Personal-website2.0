@@ -6,10 +6,11 @@ export const Container = styled.div`
    flex-direction: column;
    align-items: center;
    width: 100%;
-   min-height: 100vh;
+   min-height: 110vh;
    color: ${colors.textAbout};
    background-color: ${colors.projects};
    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+   box-sizing: content-box;
    
    h1 {
       color: ${colors.titleAbout};
@@ -28,6 +29,32 @@ export const Container = styled.div`
          
       }
    }
+
+   /* -------- Media ---------*/
+
+   @media (max-width: 1315px) {
+      min-height: 150vh;
+   }
+
+   @media (max-width: 874px) {
+      min-height: 125vh;
+   }
+
+   @media (max-width: 680px) {
+      min-height: 210vh;
+   }
+
+   @media (max-width: 415px) {
+      min-height: 265vh;
+
+      h1 {
+         font-size: 32px;
+      }
+   }
+
+   @media (max-width: 320px) {
+      min-height: 295vh;
+   }
 `;
 
 export const BoxProjects = styled.div`
@@ -35,11 +62,38 @@ export const BoxProjects = styled.div`
    grid-template-columns: 1fr 1fr 1fr;
    grid-template-rows: 1fr 1fr;
    gap: 20px;
-   width: 65%;
+   width: 80%;
    height: 720px;
    max-height: 720px;
-   box-sizing: border-box;
    margin-top: 50px;
+
+   /* -------- Media ---------*/   
+
+   @media (max-width: 1315px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      margin-top: 40px;
+      width: 70%;
+   }
+
+   @media (max-width: 874px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      margin-top: 40px;
+      width: 84%;
+   }
+
+   @media (max-width: 680px) {
+      grid-template-columns: 1fr;
+      margin-top: 40px;
+      width: 42%;
+   }
+
+   @media (max-width: 414px) {
+      grid-template-columns: 1fr;
+      margin-top: 40px;
+      width: 60%;
+   }
 `;
 
 export const Projects = styled.div`
@@ -49,6 +103,33 @@ export const Projects = styled.div`
    background-image: url(${props => props.BackGround});
    background-size: cover;
    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+   box-sizing: content-box;
+
+/* -------- Media ---------*/
+
+   @media (max-width: 874px) {
+      max-width: 315px;
+      width: 100%;
+      max-height: 289px;
+   }
+
+   @media (max-width: 874px) {
+      max-width: 327px;
+      width: 100%;
+      max-height: 272px;
+   }
+   
+   @media (max-width: 680px) {
+      max-width: 278px;
+      width: 100%;
+      max-height: 256px;
+   }
+
+   @media (max-width: 414px) {
+      max-width: 257px;
+      width: 100%;
+      max-height: 230px;
+   }
 `;
 
 export const ProjectsDescription = styled.div`
@@ -94,6 +175,26 @@ export const ProjectsDescription = styled.div`
          }
       }
    }
+
+   /* -------- Media ---------*/
+
+   @media (max-width: 874px) {
+         max-width: 327px;
+         width: 100%;
+         max-height: 272px;
+      }
+   
+      @media (max-width: 680px) {
+         max-width: 334px;
+         width: 100%;
+         max-height: 313px;
+      }
+
+      @media (max-width: 414px) {
+         max-width: 257px;
+         width: 100%;
+         max-height: 230px;
+      }
 `;
 
 

@@ -6,8 +6,8 @@ export const BoxTecnology = styled.div`
    flex-direction: row;
    align-items: center;
    justify-content: space-evenly;
-   max-height: 110px;
-   max-width: 110px;
+   max-height: 100px;
+   max-width: 100px;
    padding: 5px;
    background-color: #fff;
    border-radius: 50%;
@@ -27,6 +27,19 @@ export const BoxTecnology = styled.div`
       font-size: 18px;
       font-weight: bold;
       transition: all 0.8s;
+   }
+
+   /* -------- Media ---------*/
+
+   @media (max-width: 980px) {
+      border-radius: 20%;
+      height: 70px;
+      width: 70px;
+      margin-bottom: 10px;
+
+      p {
+         display: none;
+      }
    }
 
 `;

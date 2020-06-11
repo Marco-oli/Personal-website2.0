@@ -40,7 +40,9 @@ export const BoxNavBar = styled.div`
      }
    }
 
-   @media (max-width: 768px) {
+   /* -------- Media ---------*/
+
+   @media (max-width: 600px) {
       flex-flow: column nowrap;
       position: fixed;
       transform: ${({ open }) => open ? 'translateY(33.2%)' : 'translateY(-100%)'};
@@ -79,7 +81,9 @@ export const Burguer = styled.button`
    transition: all 0.6s ;
    
 
-   @media (max-width: 768px) {
+   /* -------- Media ---------*/
+   
+   @media (max-width: 600px) {
       display: flex;
    }
 `;
