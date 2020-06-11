@@ -8,16 +8,16 @@ export const Container = styled.div`
    position: fixed;
    top: 0;
    left: 0;
-   min-height: 50px;
+   height: 50px;
    background-color: ${colors.navbar};
    border-bottom: 3px solid ${colors.red};
 `;
 
 export const BoxNavBar = styled.div`
   display: flex;
-  align-items: center;
-  width: 90%;
-  margin: 0 300px;
+  flex-flow: row nowrap;
+  width: 80%;
+  margin: 0 auto;
 
   li {
      list-style: none;
@@ -38,7 +38,49 @@ export const BoxNavBar = styled.div`
      :hover {
         color: ${colors.blueStrong};
      }
+   }
 
-  }
+   @media (max-width: 768px) {
+      flex-flow: column nowrap;
+      position: fixed;
+      transform: ${({ open }) => open ? 'translateY(33.2%)' : 'translateY(-100%)'};
+      top: 0;
+      left: 0;
+      max-height: 165px;
+      width: 100%;
+      background-color: ${colors.navbar};
+      transition: transform ease-in-out, ;
+      
+      li {
+         display: flex;
+         align-items: center;
+         padding-top: 10px;
+         margin-left: 10px;
+      }
+
+      a {
+         :hover {
+            color: ${colors.blueStrong};
+         }
+      }
+   }
+`;
+
+export const Burguer = styled.button`
+   background-color: transparent;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   padding: 0 10px;
+   position: fixed;
+   color: ${({ open }) => open ? colors.red : '#fff'};
+   z-index: 20;
+   display: none;
+   transition: all 0.6s ;
+   
+
+   @media (max-width: 768px) {
+      display: flex;
+   }
 `;
 
